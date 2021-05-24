@@ -8,18 +8,6 @@ const Title = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
 `;
 
-// const options: Highcharts.Options = {
-//   title: {
-//     text: "My chart",
-//   },
-//   series: [
-//     {
-//       type: "line",
-//       data: [1, 2, 3],
-//     },
-//   ],
-// };
-
 const options: Highcharts.Options = {
   title: {
     text: "Monthly Average Rainfall",

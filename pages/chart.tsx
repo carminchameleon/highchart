@@ -5,8 +5,8 @@ import * as Highcharts from "highcharts";
 import HighchartsExporting from "highcharts/modules/exporting";
 import HighchartsReact from "highcharts-react-official";
 import moment from "moment";
-import EventChart from "../components/EventChart";
-import DataZoomChart from "../components/DataZoomChart";
+import EventChart from "../components/charts/EventChart";
+import DataZoomChart from "../components/charts/DataZoomChart";
 import employee from "../utils/employee";
 
 const Title = styled.h1`
@@ -59,12 +59,6 @@ const Home: React.FC = (props: HighchartsReact.Props) => {
   return (
     <Title>
       chart
-      {/* <HighchartsReact
-        constructorType={"stockChart"}
-        highcharts={Highcharts}
-        options={options}
-        {...props}
-      /> */}
       <DataZoomChart data={data} />
       <EventChart />
     </Title>
